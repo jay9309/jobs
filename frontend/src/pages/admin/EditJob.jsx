@@ -1,0 +1,1 @@
+import JobForm from "./JobForm"; import { useParams } from "react-router-dom"; export default function EditJob(){const {id}=useParams();return <div><h1 className="text-2xl font-extrabold text-[#102044]">Edit Job</h1><JobForm jobId={id}/></div>}

@@ -1,0 +1,1 @@
+import JobForm from "./JobForm"; export default function AddJob(){return <div><h1 className="text-2xl font-extrabold text-[#102044]">Add Job</h1><p className="mt-1 text-sm text-[#7c8aa5]">Paste a company job URL, preview the extracted data, then publish.</p><JobForm/></div>}

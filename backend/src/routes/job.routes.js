@@ -1,0 +1,12 @@
+const router = require("express").Router();
+const { protect } = require("../middleware/auth.middleware");
+const { adminOnly } = require("../middleware/admin.middleware");
+const { getJobs, getAdminJobs, getJobById, createJob, updateJob, deleteJob, previewJobFromUrl } = require("../controllers/job.controller");
+router.get("/", getJobs);
+router.get("/admin/all", protect, adminOnly, getAdminJobs);
+router.post("/admin/preview-url", protect, adminOnly, previewJobFromUrl);
+router.post("/admin", protect, adminOnly, createJob);
+router.put("/admin/:id", protect, adminOnly, updateJob);
+router.delete("/admin/:id", protect, adminOnly, deleteJob);
+router.get("/:id", getJobById);
+module.exports = router;

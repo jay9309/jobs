@@ -1,0 +1,11 @@
+import api from "./api";
+export const getAdminDashboard = () => api.get("/admin/dashboard");
+export const getUsers = () => api.get("/admin/users");
+export const updateUserStatus = (id, isActive) => api.patch(`/admin/users/${id}/status`, { isActive });
+export const getAdminApplications = () => api.get("/admin/applications");
+export const updateApplicationStatus = (id, status) => api.patch(`/admin/applications/${id}/status`, { status });
+export const getRevenue = (params) => api.get("/revenue", { params });
+export const getCompanies = () => api.get("/companies");
+export const createCompany = (payload) => api.post("/companies", payload);
+export const updateCompany = (id, payload) => api.put(`/companies/${id}`, payload);
+export const deleteCompany = (id) => api.delete(`/companies/${id}`);
