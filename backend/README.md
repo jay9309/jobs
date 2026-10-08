@@ -13,6 +13,7 @@ MERN backend for the JobOrbit job portal, including a protected owner/admin pane
    `npm run dev`
 
 API: `http://localhost:5000`
+API status: `GET /`
 Health: `GET /api/health`
 
 ## Admin panel
