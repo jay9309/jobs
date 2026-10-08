@@ -11,7 +11,7 @@ export default function AdminDashboard(){
   useEffect(()=>{load()},[]);
   const s=data.stats||{};
   return <div>
-    <div className="mb-7 flex flex-col justify-between gap-3 md:flex-row md:items-end"><div><div className="text-sm font-bold text-[#3157f5]">Owner control center</div><h1 className="mt-1 text-3xl font-extrabold text-[#102044]">Admin Dashboard</h1><p className="mt-1 text-sm text-[#7c8aa5]">Everything you need to run JobNest from one place.</p></div><Link to="/admin/jobs/add" className="btn-primary">+ Post New Job</Link></div>
+    <div className="mb-7 flex flex-col justify-between gap-3 md:flex-row md:items-end"><div><div className="text-sm font-bold text-[#3157f5]">Owner control center</div><h1 className="mt-1 text-3xl font-extrabold text-[#102044]">Admin Dashboard</h1><p className="mt-1 text-sm text-[#7c8aa5]">Everything you need to run JobOrbit from one place.</p></div><Link to="/admin/jobs/add" className="btn-primary">+ Post New Job</Link></div>
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
       <StatCard label="Total Users" value={s.totalUsers||0} icon={Users} />
       <StatCard label="Total Jobs" value={s.totalJobs||0} icon={BriefcaseBusiness} />

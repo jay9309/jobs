@@ -26,7 +26,7 @@ export default function JobDetails() {
         </div>
       </div>
       <aside className="space-y-4">
-        <div className="soft-card sticky top-24 p-6"><h3 className="text-lg font-extrabold text-[#102044]">Ready to Apply?</h3><p className="mt-2 text-sm leading-6 text-[#71809b]">Apply through the original company website after your JobNest subscription is active.</p><ApplyButton jobId={job._id}/><div className="mt-5 rounded-xl bg-[#f6f8fd] p-4 text-xs leading-5 text-[#667691]"><ShieldCheck size={17} className="mb-1 text-[#3157f5]"/> Your subscription controls application access; JobNest does not submit forms on the company website.</div></div>
+        <div className="soft-card sticky top-24 p-6"><h3 className="text-lg font-extrabold text-[#102044]">Ready to Apply?</h3><p className="mt-2 text-sm leading-6 text-[#71809b]">Apply through the original company website after your JobOrbit subscription is active.</p><ApplyButton jobId={job._id}/><div className="mt-5 rounded-xl bg-[#f6f8fd] p-4 text-xs leading-5 text-[#667691]"><ShieldCheck size={17} className="mb-1 text-[#3157f5]"/> Your subscription controls application access; JobOrbit does not submit forms on the company website.</div></div>
       </aside>
     </div>
   </section>

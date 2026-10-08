@@ -1,6 +1,6 @@
-# JobNest Full Stack
+# JobOrbit Full Stack
 
-JobNest is a MERN job portal where the website owner can publish job openings, fetch job information from a company's job URL for review, control paid application access, manage subscription plans and monitor users/payments/revenue.
+JobOrbit is a MERN job portal where the website owner can publish job openings, fetch job information from a company's job URL for review, control paid application access, manage subscription plans and monitor users/payments/revenue.
 
 ## Folder structure
 
@@ -35,7 +35,7 @@ Open `http://localhost:5173`.
 
 ## Owner/Admin panel
 
-Open `http://localhost:5173/admin` or sign in directly at `http://localhost:5173/admin/login`. If you are not logged in, JobNest sends you to the owner/admin login page. Only a user whose backend role is `ADMIN` can access the admin panel and APIs; regular user accounts are sent back to their dashboard.
+Open `http://localhost:5173/admin` or sign in directly at `http://localhost:5173/admin/login`. If you are not logged in, JobOrbit sends you to the owner/admin login page. Only a user whose backend role is `ADMIN` can access the admin panel and APIs; regular user accounts are sent back to their dashboard.
 
 Admin sections:
 

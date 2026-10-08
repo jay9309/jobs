@@ -52,7 +52,7 @@ export default function PaymentButton({ plan }) {
         key: data.keyId,
         amount: data.order.amount,
         currency: data.order.currency,
-        name: "JobNest",
+        name: "JobOrbit",
         description: `${plan.name} subscription`,
         order_id: data.order.id,
         handler: async (response) => {

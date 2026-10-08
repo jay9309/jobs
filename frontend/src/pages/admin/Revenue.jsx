@@ -45,7 +45,7 @@ export default function Revenue() {
     <div>
       <div className="text-sm font-bold text-[#3157f5]">Business analytics</div>
       <h1 className="text-2xl font-extrabold text-[#102044]">Revenue</h1>
-      <p className="mt-1 text-sm text-[#7c8aa5]">Gross successful subscription revenue recorded by JobNest.</p>
+      <p className="mt-1 text-sm text-[#7c8aa5]">Gross successful subscription revenue recorded by JobOrbit.</p>
       {error && (
         <div className="mt-5 rounded-lg bg-red-50 p-3 text-sm text-red-700">
           <p role="alert">{error}</p>
@@ -89,7 +89,7 @@ export default function Revenue() {
           <div className="text-sm font-bold text-white/60">Important</div>
           <h3 className="mt-2 text-xl font-extrabold">Revenue control</h3>
           <p className="mt-3 text-sm leading-6 text-white/75">
-            This panel records the subscription amount captured by JobNest. Razorpay processing fees and settlements should be reconciled against the Razorpay dashboard before accounting for net profit.
+            This panel records the subscription amount captured by JobOrbit. Razorpay processing fees and settlements should be reconciled against the Razorpay dashboard before accounting for net profit.
           </p>
           <div className="mt-5 rounded-xl bg-white/10 p-4 text-sm">
             Gross revenue<br />

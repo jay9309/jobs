@@ -6,7 +6,7 @@ const User = require("./models/User");
 async function main() {
   const email = process.env.ADMIN_EMAIL;
   const password = process.env.ADMIN_PASSWORD;
-  const name = process.env.ADMIN_NAME || "JobNest Owner";
+  const name = process.env.ADMIN_NAME || "JobOrbit Owner";
   if (!email || !password) throw new Error("Set ADMIN_EMAIL and ADMIN_PASSWORD in backend/.env before running npm run create-admin");
   await connectDB();
   const hash = await bcrypt.hash(password, 12);

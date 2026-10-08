@@ -42,7 +42,7 @@ export default function Login() {
         <div className="soft-card p-8">
           <div className="mb-5 rounded-xl bg-[#f3f6ff] p-4">
             <div className="text-xs font-extrabold uppercase tracking-wide text-[#3157f5]">
-              {isAdminLogin ? "Owner / Admin Login" : "JobNest Account"}
+              {isAdminLogin ? "Owner / Admin Login" : "JobOrbit Account"}
             </div>
             <div className="mt-1 text-sm text-[#667691]">
               {isAdminLogin
@@ -77,7 +77,7 @@ export default function Login() {
           </form>
           {!isAdminLogin && (
             <p className="mt-6 text-center text-sm text-[#7c8aa5]">
-              New to JobNest? <Link className="font-bold text-[#3157f5]" to="/register">Create account</Link>
+              New to JobOrbit? <Link className="font-bold text-[#3157f5]" to="/register">Create account</Link>
             </p>
           )}
         </div>

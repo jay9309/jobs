@@ -1,6 +1,6 @@
-# JobNest Backend
+# JobOrbit Backend
 
-MERN backend for the JobNest job portal, including a protected owner/admin panel, job URL preview, subscription plans, Razorpay payments, applications and revenue reporting.
+MERN backend for the JobOrbit job portal, including a protected owner/admin panel, job URL preview, subscription plans, Razorpay payments, applications and revenue reporting.
 
 ## Setup
 

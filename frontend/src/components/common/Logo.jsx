@@ -9,7 +9,7 @@ export default function Logo({ light = false }) {
       </span>
       <span>
         <span className="block text-[22px] font-extrabold leading-5 tracking-tight">
-          Job<span className="text-[#3157f5]">Nest</span>
+          Job<span className="text-[#3157f5]">Orbit</span>
         </span>
         <span className={`text-[9px] font-medium ${light ? "text-white/70" : "text-[#7c8aa5]"}`}>Real Jobs. Real Opportunities.</span>
       </span>

@@ -1,6 +1,6 @@
-# JobNest Frontend
+# JobOrbit Frontend
 
-React + Vite + Tailwind frontend for the JobNest job portal.
+React + Vite + Tailwind frontend for the JobOrbit job portal.
 
 ## Run
 
@@ -15,7 +15,7 @@ Set `.env` from `.env.example` if the backend is not running on `http://localhos
 
 ## Design
 
-The homepage and supporting pages use the JobNest visual language from the supplied reference:
+The homepage and supporting pages use the JobOrbit visual language from the supplied reference:
 - white navigation
 - navy/blue hero
 - rounded search bar
