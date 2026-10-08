@@ -13,9 +13,23 @@ const revenueRoutes = require("./routes/revenue.routes");
 const { notFound, errorHandler } = require("./middleware/error.middleware");
 
 const app = express();
+const allowedOrigins = new Set(
+  [
+    "http://localhost:5173",
+    "https://frontend-black-psi-72.vercel.app",
+    process.env.FRONTEND_URL,
+    process.env.CORS_ORIGINS
+  ]
+    .filter(Boolean)
+    .flatMap((origins) => origins.split(","))
+    .map((origin) => origin.trim().replace(/\/+$/, ""))
+    .filter(Boolean)
+);
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: (origin, callback) => {
+    callback(null, !origin || allowedOrigins.has(origin));
+  },
   credentials: true
 }));
 app.use(express.json());
