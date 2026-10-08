@@ -9,6 +9,7 @@ const paymentRoutes = require("./routes/payment.routes");
 const applicationRoutes = require("./routes/application.routes");
 const adminRoutes = require("./routes/admin.routes");
 const revenueRoutes = require("./routes/revenue.routes");
+const connectDB = require("./config/db");
 
 const { notFound, errorHandler } = require("./middleware/error.middleware");
 
@@ -44,6 +45,15 @@ app.get("/", (req, res) => {
 
 app.get("/api/health", (req, res) => {
   res.json({ success: true, message: "Job Portal API is running" });
+});
+
+app.use("/api", async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    next(error);
+  }
 });
 
 app.use("/api/auth", authRoutes);

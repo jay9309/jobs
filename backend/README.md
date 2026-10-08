@@ -18,6 +18,8 @@ Health: `GET /api/health`
 
 In production, set `CORS_ORIGINS` to a comma-separated list of allowed frontend origins (for example, `https://frontend-black-psi-72.vercel.app`). `FRONTEND_URL` remains supported for a single additional origin.
 
+Set `MONGO_URI` in the backend deployment environment. API routes connect to MongoDB on demand and reuse the connection across requests; make sure your MongoDB provider permits connections from the deployment platform.
+
 ## Admin panel
 
 Frontend route: `http://localhost:5173/admin`
