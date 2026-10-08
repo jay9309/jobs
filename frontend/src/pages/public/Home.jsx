@@ -26,9 +26,16 @@ export default function Home() {
             <p className="mt-5 max-w-[590px] text-sm leading-6 text-white/75 sm:text-[15px]">We fetch the latest job openings from company websites and bring them to you — all in one place. Get detailed job information and apply easily with our premium subscription.</p>
             <div className="mt-6 max-w-[1020px]"><JobSearch value={search} setValue={setSearch} onSearch={() => navigate(`/jobs?search=${encodeURIComponent(search)}`)}/></div>
           </div>
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-[48%] bg-[linear-gradient(90deg,rgba(6,23,51,.05),rgba(6,23,51,.0))]">
-            <img src={heroPerson} className="absolute right-0 top-0 h-full w-full object-cover object-center opacity-90 mix-blend-screen" alt="Career" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#061733] via-transparent to-[#061733]/10"/>
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-[48%]">
+            <img
+              src={heroPerson}
+              className="absolute right-0 top-0 h-full w-full object-contain object-right"
+              style={{
+                maskImage:
+                  "linear-gradient(90deg, transparent 0%, black 16%, black 92%, transparent 100%)"
+              }}
+              alt="Career"
+            />
           </div>
         </div>
       </section>
