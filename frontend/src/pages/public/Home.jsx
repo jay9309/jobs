@@ -17,14 +17,20 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-[#061733]">
+      <section className="relative z-20 overflow-visible bg-[#061733]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_45%,rgba(55,103,255,.36),transparent_30%),linear-gradient(110deg,#06152f,#0d2451_48%,#151a49)]"/>
         <div className="container-wide relative grid min-h-[356px] items-center py-12 lg:grid-cols-[1.08fr_.92fr]">
           <div className="relative z-10 max-w-[650px]">
             <div className="mb-4 inline-flex rounded-full bg-[#1c477e] px-4 py-2 text-xs font-bold text-white">Your Next Career Move Starts Here 🚀</div>
             <h1 className="text-4xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-5xl">Find Your Dream Job<br/>From <span className="gradient-text">Top Companies</span></h1>
             <p className="mt-5 max-w-[590px] text-sm leading-6 text-white/75 sm:text-[15px]">We fetch the latest job openings from company websites and bring them to you — all in one place. Get detailed job information and apply easily with our premium subscription.</p>
-            <div className="mt-6 max-w-[1020px]"><JobSearch value={search} setValue={setSearch} onSearch={() => navigate(`/jobs?search=${encodeURIComponent(search)}`)}/></div>
+            <div className="mt-6 max-w-[1020px]"><JobSearch
+              value={search}
+              setValue={setSearch}
+              jobs={jobs.length ? jobs : DEMO_JOBS}
+              onSearch={() => navigate(`/jobs?search=${encodeURIComponent(search)}`)}
+              onSelect={job => navigate(`/jobs/${job._id}`)}
+            /></div>
           </div>
           <div className="pointer-events-none absolute right-0 top-0 h-full w-[48%]">
             <img
